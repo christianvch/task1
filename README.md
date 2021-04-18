@@ -19,29 +19,29 @@ PASOS DE EJECUCION
 4) PASOS MANUALES PARA CONEXION A GKE
 
 -> Eliminamos autenticaciones recientes, si fuera necesario
- $ gcloud auth revoke --all
+ -  gcloud auth revoke --all
 -> Conexion a gcp usando la cuenta de servicio creada y el archivo .json
- $ gcloud auth activate-service-account "Cuenta de servicio" --key-file="json file" --project="nombre del proyecto"
+ -  gcloud auth activate-service-account "Cuenta de servicio" --key-file="json file" --project="nombre del proyecto"
 -> Conexion a cluster mediante kubectl 
- $ gloud container clusters get-credentials "nombre gke" --region "region"
+ -  gloud container clusters get-credentials "nombre gke" --region "region"
 
 5) Validacion de instalacion de GKE
-$ kubectl get nodes
+-  kubectl get nodes
 
 6) Usando la carpeta app/
 
-$ kubectl apply -f app/deployment_app.yaml  (Creacion de app)
-$ kubectl apply -f app/service_app.yaml (Creacion de servicio)
-$ kubectl apply -f app/ingress.yaml (Creacion de ingress)
+- kubectl apply -f app/deployment_app.yaml  (Creacion de app)
+- kubectl apply -f app/service_app.yaml (Creacion de servicio)
+- kubectl apply -f app/ingress.yaml (Creacion de ingress)
 
 7) Funcionalidad de la aplicacion REST 
 Con la ip del ingress ir al puerto 80
 Ejemplo:
 
-- Funcionalidad 1 (SALUDO) 
-$ http://<ip>/greetings (Saludo Hello World)
-- Funcionalidad 2 (CUADRADO)
-$ http://<ip>/square/{Valor}
+-> Funcionalidad 1 (SALUDO) 
+- http://<ip>/greetings (Saludo Hello World)
+-> Funcionalidad 2 (CUADRADO)
+- http://<ip>/square/{Valor}
 Retornar la potencia de un numero, es decir si colocamos de la siguiente manera tendremos "http://<ip>/square/10", tendremos: "El cuadradod de 10 es: 100"
 
 
