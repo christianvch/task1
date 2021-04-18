@@ -26,11 +26,12 @@ PASOS DE EJECUCION
 
 1) git clone "repositorio"
 2) cd task1
-3) sh deploy.sh --> Siendo:
+3) cambio de datos del archivo terraform.tfvars
+4) sh deploy.sh --> Siendo:
 - La tarea 1: CREAR el cluster.
 - La tarea 2: DESTROY el cluster.
 - La tarea 3: OUTPUT de la instalacion
-4) PASOS MANUALES PARA CONEXION A GKE
+5) PASOS MANUALES PARA CONEXION A GKE
 
 -> Eliminamos autenticaciones recientes, si fuera necesario
  -  gcloud auth revoke --all
