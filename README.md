@@ -30,7 +30,7 @@ PASOS DE EJECUCION
 4) sh deploy.sh --> Siendo:
 - La tarea 1: CREAR el cluster.
 - La tarea 2: DESTROY el cluster.
-- La tarea 3: OUTPUT de la instalacion
+- La tarea 3: OUTPUT del nombre del gke.
 5) PASOS MANUALES PARA CONEXION A GKE
 
 -> Eliminamos autenticaciones recientes, si fuera necesario
