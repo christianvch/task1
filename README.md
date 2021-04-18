@@ -13,6 +13,13 @@ PREREQUISITO
 - Sistema operativo: Centos 7.x
 - Cuenta de servicio creado con archivo .json
 - Tener instalado Kubectl
+-> El archivo terraform.tfvars con el siguiente contenido el cual debe de reemplazado por nuevos valores para el despliegue
+
+- project_name         = "nombre"
+- gcp_credentials_path  = "file.json"
+- region               = "region"
+- zone                 = "zone"
+- machine_type         = "machinetype"
 
 PASOS DE EJECUCION
 
