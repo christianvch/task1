@@ -1,5 +1,10 @@
-# task1
+# Task1
 ###################################################
+SOLUCION DE APP
+
+- Python3 usando FASTAPI
+- uvicorn para la exposicion del servicio
+- Dockerfile
 
 PREREQUISITO
 
