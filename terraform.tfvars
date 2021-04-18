@@ -1,5 +1,5 @@
-project_name         = "static-road-310823"
-gcp_credentials_path  = "/root/task1/static-road-310823-8c830c80bbd6.json"
+project_name         = "static-road-x"
+gcp_credentials_path  = "/path/task1/static-road-x-8c830c80bbd6.json"
 region               = "us-central1"
 zone                 = "us-central1-a"
 machine_type         = "n1-standard-1"
