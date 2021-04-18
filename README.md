@@ -20,9 +20,11 @@ PASOS DE EJECUCION
 
 -> Eliminamos autenticaciones recientes, si fuera necesario
  -  gcloud auth revoke --all
+
 -> Conexion a gcp usando la cuenta de servicio creada y el archivo .json
  -  gcloud auth activate-service-account "Cuenta de servicio" --key-file="json file" --project="nombre del proyecto"
--> Conexion a cluster mediante kubectl 
+
+-> Conexion a cluster mediante kubectl
  -  gloud container clusters get-credentials "nombre gke" --region "region"
 
 5) Validacion de instalacion de GKE
@@ -42,7 +44,8 @@ Ejemplo:
 - http://<ip>/greetings (Saludo Hello World)
 -> Funcionalidad 2 (CUADRADO)
 - http://<ip>/square/{Valor}
-Retornar la potencia de un numero, es decir si colocamos de la siguiente manera tendremos "http://<ip>/square/10", tendremos: "El cuadradod de 10 es: 100"
+Retornar la potencia de un numero, es decir si colocamos de la siguiente manera tendremos "http://<ip>/square/10", tendremos: 
+ "El cuadradod de 10 es: 100"
 
 
 
