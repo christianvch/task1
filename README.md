@@ -41,10 +41,10 @@ Con la ip del ingress ir al puerto 80
 Ejemplo:
 
 -> Funcionalidad 1 (SALUDO) 
-- http://<ip>/greetings (Saludo Hello World)
+- http://IP/greetings (Saludo Hello World)
 -> Funcionalidad 2 (CUADRADO)
-- http://<ip>/square/{Valor}
-Retornar la potencia de un numero, es decir si colocamos de la siguiente manera tendremos "http://<ip>/square/10", tendremos: 
+- http://IP/square/{Valor}
+Retornar la potencia de un numero, es decir si colocamos de la siguiente manera tendremos "http://IP/square/10", tendremos: 
  "El cuadradod de 10 es: 100"
 
 
