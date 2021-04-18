@@ -1,9 +1,15 @@
-apiVersion: extensions/v1beta1
-#apiVersion: apps/v1
+---
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: demo-ingress
+  name: gke-ing
+  annotations:
+    kubernetes.io/ingress.class: gce
 spec:
-  backend:
-    serviceName: demo
-    servicePort: 80
+  rules:
+  - http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: demo
+          servicePort: 80
